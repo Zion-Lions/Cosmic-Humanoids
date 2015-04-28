@@ -1,10 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Robot : MonoBehaviour {
+public class Robot : MonoBehaviour
+{
+
 	GameObject rob;
+
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		rob = GameObject.Find ("Robot Kyle");
 	}
 	
