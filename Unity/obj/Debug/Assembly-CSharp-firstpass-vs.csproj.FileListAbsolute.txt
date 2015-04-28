@@ -1,0 +1,26 @@
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEditor.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEngine.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\Mono.Cecil.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\nunit.framework.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\Unity.DataContract.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\Stockage fichiers\Bureau\IP\Cosmic-Humanoids\Unity\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Mermaid\Documents\GitHub\Cosmic-Humanoids\Unity\obj\Debug\Assembly-CSharp-firstpass.pdb
