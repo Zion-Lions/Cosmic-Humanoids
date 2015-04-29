@@ -60,7 +60,7 @@
      <Compile Include="Assets\Scripts\HealthHUD.cs" />
      <Compile Include="Assets\Scripts\HideCursor.cs" />
      <Compile Include="Assets\Scripts\MainMenuButton.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\Multijoueur.cs" />
      <Compile Include="Assets\Scripts\PausedMenu.cs" />
      <Compile Include="Assets\Scripts\RayShoot.cs" />
      <Compile Include="Assets\Scripts\RaysShootRobotKyle.cs" />
