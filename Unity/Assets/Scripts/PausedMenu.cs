@@ -17,6 +17,7 @@ public class PausedMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("escape"))
         {
+			GetComponent<AudioSource>().UnPause();
             isPaused = !isPaused;
         }
 

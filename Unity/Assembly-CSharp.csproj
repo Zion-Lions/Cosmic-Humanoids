@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Users/Mermaid/Documents/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Users/Mermaid/Documents/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -54,7 +54,9 @@
      <Compile Include="Assets\Menu\MenuManager.cs" />
      <Compile Include="Assets\Scripts\AccesGame.cs" />
      <Compile Include="Assets\Scripts\Aim.cs" />
+     <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\Dontdestroy.cs" />
      <Compile Include="Assets\Scripts\FollowPath.cs" />
      <Compile Include="Assets\Scripts\GunMovement.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
@@ -67,6 +69,7 @@
      <Compile Include="Assets\Scripts\RayShoot.cs" />
      <Compile Include="Assets\Scripts\RaysShootRobotKyle.cs" />
      <Compile Include="Assets\Scripts\Robot.cs" />
+     <Compile Include="Assets\Scripts\SoundControl.cs" />
      <Compile Include="Assets\Scripts\SwitchWeapon.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <None Include="Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
@@ -76,10 +79,10 @@
      <None Include="Assets\FPSHangar\_Source\VolumetricLight\VolumetricLight.shader" />
      <None Include="Assets\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/Mermaid/Documents/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Users/Mermaid/Documents/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -30,7 +30,7 @@ public class MainMenuButton : MonoBehaviour
 
     public void website()
     {
-        Application.OpenURL("http://www.google.com");
+		Application.OpenURL("http://cosmichumanoids.free.fr/");
     }
 
 }
