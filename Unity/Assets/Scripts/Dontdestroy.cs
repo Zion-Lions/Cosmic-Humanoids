@@ -10,6 +10,6 @@ public class Dontdestroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		DontDestroyOnLoad (go);
+			DontDestroyOnLoad (go);
 	}
 }

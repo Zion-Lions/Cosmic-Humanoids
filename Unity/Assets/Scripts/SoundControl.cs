@@ -14,7 +14,8 @@ public class SoundControl : MonoBehaviour {
 	Time t;
 
 	// Use this for initialization
-	void Start () {
+	void Start () {	
+		GetComponent<AudioSource> ().Stop ();
 		GetComponent<AudioSource> ().PlayOneShot (song1);
 		n = 1;
 	}
