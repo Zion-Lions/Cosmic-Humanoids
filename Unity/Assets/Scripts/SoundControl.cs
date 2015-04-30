@@ -14,9 +14,12 @@ public class SoundControl : MonoBehaviour {
 	Time t;
 
 	// Use this for initialization
-	void Start () {	
+	void Start () {
 		GetComponent<AudioSource> ().Stop ();
-		GetComponent<AudioSource> ().PlayOneShot (song1);
+		if (GetComponent<AudioSource> ().mute) {
+			GetComponent<AudioSource> ().PlayOneShot (song1);
+			GetComponent<AudioSource>().mute = true;
+				}
 		n = 1;
 	}
 	
@@ -27,7 +30,8 @@ public class SoundControl : MonoBehaviour {
 
 	public void Play()
 	{
-		GetComponent<AudioSource> ().Play();
+		if(GetComponent<AudioSource>().mute)
+			GetComponent<AudioSource> ().Play();
 	}
 
 	public void Pause()
