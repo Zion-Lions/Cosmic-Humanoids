@@ -18,6 +18,11 @@ public class MainMenuButton : MonoBehaviour
         Application.LoadLevel("FirstGame");
 	}
 
+    public void Multiplayer()
+    {
+        Application.LoadLevel("Multijoueur");
+    }
+
 	public void ExitGame()
 	{
 		Application.Quit ();

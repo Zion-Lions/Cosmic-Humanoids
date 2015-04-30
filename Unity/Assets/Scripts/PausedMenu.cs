@@ -69,7 +69,7 @@ public class PausedMenu : MonoBehaviour
 				Cursor.visible = false;
 			}
             if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2, 80, 35), "Main Menu"))
-                Application.LoadLevel(0);
+                Application.LoadLevel("MainMenu");
             if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 + 40, 80, 35), "Quit"))
                 Application.Quit();
         }
