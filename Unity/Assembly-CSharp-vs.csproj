@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\HealthHUD.cs" />
      <Compile Include="Assets\Scripts\HideCursor.cs" />
      <Compile Include="Assets\Scripts\MainMenuButton.cs" />
+     <Compile Include="Assets\Scripts\MoveToMainMenu.cs" />
      <Compile Include="Assets\Scripts\MovetoMap.cs" />
      <Compile Include="Assets\Scripts\Multijoueur.cs" />
      <Compile Include="Assets\Scripts\PausedMenu.cs" />

@@ -44,7 +44,7 @@ public class Multijoueur : MonoBehaviour
         }
 
 
-        Application.LoadLevel("FirstGame");
+        Application.LoadLevel("MazeGenerator");
     }
 
     public void RefreshList()
