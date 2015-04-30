@@ -192,13 +192,25 @@ public class RayShoot : MonoBehaviour
 
         if (AllBulletsLeft > 0)
         {
-            currentWeapon.GetComponent<Weapon>().AllBulletsLeft = AllBulletsLeft - (BulletsPerClip - BulletsLeft);
-            currentWeapon.GetComponent<Weapon>().BulletsLeft = BulletsPerClip;
+            if (AllBulletsLeft < 30)
+            {
+                currentWeapon.GetComponent<Weapon>().BulletsLeft = AllBulletsLeft + BulletsLeft;
+                currentWeapon.GetComponent<Weapon>().AllBulletsLeft = 0;
+                
+
+                BulletsLeft = AllBulletsLeft + BulletsLeft;
+                AllBulletsLeft = 0;
+                
+            }
+            else
+            {
+                currentWeapon.GetComponent<Weapon>().AllBulletsLeft = AllBulletsLeft - (BulletsPerClip - BulletsLeft);
+                currentWeapon.GetComponent<Weapon>().BulletsLeft = BulletsPerClip;
 
 
-            AllBulletsLeft = AllBulletsLeft - (BulletsPerClip - BulletsLeft);
-            BulletsLeft = BulletsPerClip;
-
+                AllBulletsLeft = AllBulletsLeft - (BulletsPerClip - BulletsLeft);
+                BulletsLeft = BulletsPerClip;
+            }
         }
     }
 }

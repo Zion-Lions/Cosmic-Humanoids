@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using System.Timers;
-using System.Timers;
 
 public class SoundControl : MonoBehaviour {
 	public AudioClip song1;
