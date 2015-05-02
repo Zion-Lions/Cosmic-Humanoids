@@ -63,19 +63,19 @@ public class PausedMenu : MonoBehaviour
         if (isPaused)
         {
             //Fais apparaitre les buttons
-            if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 - 40, 80, 35), "Continue"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 - 80, 150, 70), "Continue"))
 			{
                 isPaused = false;
 				Cursor.visible = false;
 			}
 
-            if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2, 80, 35), "Main Menu"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2, 150, 70), "Main Menu"))
             {
                 isPaused = !isPaused;
                 Application.LoadLevel("MainMenu");
             }
 
-            if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 + 40, 80, 35), "Quit"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 + 80, 150, 70), "Quit"))
             {
                 Application.Quit();
             }
