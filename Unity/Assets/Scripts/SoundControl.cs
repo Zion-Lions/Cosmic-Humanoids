@@ -10,15 +10,20 @@ public class SoundControl : MonoBehaviour {
 	public AudioClip song3;
 	public AudioClip song4;
 	public AudioClip song5;
+	bool pause;
 	int n;
 	Time t;
 
 	// Use this for initialization
 	void Start () {
+		pause = true;
 		GetComponent<AudioSource> ().Stop ();
+		AudioListener.pause = true;
+		Play ();
 		if (GetComponent<AudioSource> ().mute) {
 			GetComponent<AudioSource> ().PlayOneShot (song1);
-			GetComponent<AudioSource>().mute = true;
+			GetComponent<AudioSource>().mute = false;
+			Pause();
 				}
 		n = 1;
 	}
@@ -30,24 +35,34 @@ public class SoundControl : MonoBehaviour {
 
 	public void Play()
 	{
+		AudioListener.pause = false;
 		if(GetComponent<AudioSource>().mute)
 			GetComponent<AudioSource> ().Play();
 	}
 
 	public void Pause()
 	{
-		GetComponent<AudioSource> ().Pause();
+		if (pause) {
+			AudioListener.pause = true;;
+				}else
+			AudioListener.pause = false;
+		pause = !pause;
 	}
 
 	public void Next()
 	{
 		GetComponent<AudioSource> ().Stop ();
+		AudioListener.pause = true;
+		pause = true;
 		n++;
+		AudioListener.pause = false;
 		GetComponent<AudioSource> ().PlayOneShot (songtoplay (n));
 	}
 
 	public void Stop()
 	{
+		AudioListener.pause = true;
+		pause = true;
 		GetComponent<AudioSource> ().Stop ();
 	}
 
@@ -69,5 +84,15 @@ public class SoundControl : MonoBehaviour {
 			n = 1;
 			return song1;
 		}
+	}
+
+	public void Volplus()
+	{
+		GetComponent<AudioSource> ().volume++;
+	}
+
+	public void Volmoins()
+	{
+		GetComponent<AudioSource> ().volume--;
 	}
 }
