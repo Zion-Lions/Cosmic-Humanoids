@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{CD8C9303-404B-FB8D-6B9B-21988D5CAC0A}</ProjectGuid>
+	<ProjectGuid>{0CDEF5B4-5D89-843D-4E19-A4A5D599C4FF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,35 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FPSHangar\_Source\Script\RoomWanderer.cs" />
-     <Compile Include="Assets\FPSHangar\_Source\VolumetricLight\VolumetricLight.cs" />
-     <Compile Include="Assets\FPSHangar\_Source\VolumetricLight\VolumetricLightSet.cs" />
-     <Compile Include="Assets\Maze\Maze.cs" />
-     <Compile Include="Assets\Menu\Menu.cs" />
-     <Compile Include="Assets\Menu\MenuManager.cs" />
-     <Compile Include="Assets\Scripts\AccesGame.cs" />
-     <Compile Include="Assets\Scripts\Aim.cs" />
-     <Compile Include="Assets\Scripts\Button.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\Dontdestroy.cs" />
-     <Compile Include="Assets\Scripts\Follow.cs" />
-     <Compile Include="Assets\Scripts\FollowPath.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
-     <Compile Include="Assets\Scripts\GunMovement.cs" />
-     <Compile Include="Assets\Scripts\HUD.cs" />
-     <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\HealthHUD.cs" />
-     <Compile Include="Assets\Scripts\HideCursor.cs" />
-     <Compile Include="Assets\Scripts\MainMenuButton.cs" />
-     <Compile Include="Assets\Scripts\MovetoMap.cs" />
-     <Compile Include="Assets\Scripts\Multijoueur.cs" />
-     <Compile Include="Assets\Scripts\PausedMenu.cs" />
-     <Compile Include="Assets\Scripts\RayShoot.cs" />
-     <Compile Include="Assets\Scripts\RaysShootRobotKyle.cs" />
-     <Compile Include="Assets\Scripts\Robot.cs" />
-     <Compile Include="Assets\Scripts\SoundControl.cs" />
-     <Compile Include="Assets\Scripts\SwitchWeapon.cs" />
-     <Compile Include="Assets\Scripts\Weapon.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.js" />
      <None Include="Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
