@@ -18,5 +18,8 @@ public class FollowPlayer : MonoBehaviour {
     {
 		v.Set(target.position.x, transform.position.y, target.position.z);
 		transform.LookAt(v);
+
+		transform.Translate (Vector3.forward * moveSpeed * Time.deltaTime);
+
 	}
 }

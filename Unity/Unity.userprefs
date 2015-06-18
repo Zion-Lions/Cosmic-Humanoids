@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FollowPlayer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NavMeshAI.cs">
     <Files>
-      <File FileName="Assets\Scripts\Health.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RayShoot.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FollowPath.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Follow.cs" Line="38" Column="1" />
-      <File FileName="Assets\Scripts\FollowPlayer.cs" Line="18" Column="24" />
+      <File FileName="Assets\Scripts\FollowPlayer.cs" Line="8" Column="1" />
+      <File FileName="Assets\Scripts\Health.cs" Line="7" Column="22" />
+      <File FileName="Assets\Scripts\RayShoot.cs" Line="5" Column="19" />
+      <File FileName="Assets\Scripts\NavMeshAI.cs" Line="19" Column="46" />
+      <File FileName="Assets\Scripts\HealthHUD.cs" Line="21" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
