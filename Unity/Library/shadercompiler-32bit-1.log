@@ -1,5 +1,5 @@
-Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-12840
+Base path: C:/Users/Mermaid/Documents/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-7676
 Cmd: getPlatforms
 Unhandled exception: Readfile from pipe failed. GLE=Le canal de communication a été fermé.
 
