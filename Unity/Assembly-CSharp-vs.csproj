@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\RaysShootRobotKyle.cs" />
      <Compile Include="Assets\Scripts\Robot.cs" />
      <Compile Include="Assets\Scripts\SoundControl.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\SwitchWeapon.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <None Include="Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
