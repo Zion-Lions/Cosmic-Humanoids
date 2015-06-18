@@ -60,6 +60,7 @@ public class RayShoot : MonoBehaviour
 	    {
 	        muzzleFlashTimer -= Time.deltaTime;
             MuzzleFlash.emit = false;
+            hitParticles.emit = false;
             Light1.SetActive(false);
             Light2.SetActive(false);
             Light3.SetActive(false);
@@ -86,7 +87,6 @@ public class RayShoot : MonoBehaviour
             {
                 if (ShootTimer == 0)
                 {
-                   
                     currentWeapon.GetComponent<Animation>().Play("Idle");
                     PlayShootAudio();
                     RayShot();
@@ -145,7 +145,7 @@ public class RayShoot : MonoBehaviour
                     hitParticles.transform.position = hit.point;
                     hitParticles.transform.localRotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
 
-                    hitParticles.Emit();
+                    hitParticles.emit = true;
                     
 					
                     hit.rigidbody.AddForceAtPosition(DirectionRay * Force, hit.point);

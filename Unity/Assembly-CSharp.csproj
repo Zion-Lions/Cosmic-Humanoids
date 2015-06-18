@@ -54,6 +54,7 @@
      <Compile Include="Assets\Menu\MenuManager.cs" />
      <Compile Include="Assets\Scripts\AccesGame.cs" />
      <Compile Include="Assets\Scripts\Aim.cs" />
+     <Compile Include="Assets\Scripts\AmmoBoxScript.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Dontdestroy.cs" />
