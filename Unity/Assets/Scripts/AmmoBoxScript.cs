@@ -3,16 +3,16 @@ using System.Collections;
 
 public class AmmoBoxScript : MonoBehaviour
 {
+
     public GameObject MainCamera;
     private GameObject currentWeapon;
 
-	// Use this for initialization
+
 	void Start ()
 	{
 
 	}
 	
-	// Update is called once per frame
 	void Update ()
     {
 	    

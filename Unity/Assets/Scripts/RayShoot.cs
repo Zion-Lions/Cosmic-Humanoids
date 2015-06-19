@@ -34,7 +34,7 @@ public class RayShoot : MonoBehaviour
 
     public GameObject currentWeapon;
 
-	// Use this for initialization
+	
 	void Start()
 	{
         currentWeapon = GameObject.Find("M4A1");
@@ -42,7 +42,6 @@ public class RayShoot : MonoBehaviour
         hitParticles.emit = false;
 	}
 	
-	// Update is called once per frame
 	void Update()
     {
         
@@ -138,7 +137,7 @@ public class RayShoot : MonoBehaviour
         
         if (Physics.Raycast(transform.position, DirectionRay, out hit, Range))
         {
-            if (hit.rigidbody)
+            if (hit.rigidbody || hit.collider.gameObject.tag == "Player")
             {
                 if (hitParticles)
                 {

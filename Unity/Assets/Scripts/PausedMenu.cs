@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PausedMenu : MonoBehaviour
 {
@@ -27,9 +28,7 @@ public class PausedMenu : MonoBehaviour
 			Time.timeScale = 0f;
 			Cursor.visible = true;
 			//Mise en pause des script
-			Perso.GetComponent<MouseLook>().enabled = false;
-			Perso.GetComponent<CharacterMotor>().enabled = false;
-			Perso.GetComponent<FPSInputController>().enabled = false;
+			Perso.GetComponent<RigidbodyFirstPersonController>().enabled = false;
 
             Camera.GetComponent<MouseLook>().enabled = false;
             Camera.GetComponent<AudioListener>().enabled = false;
@@ -44,10 +43,8 @@ public class PausedMenu : MonoBehaviour
         {
 			//Reviens à la normal
 			Time.timeScale = 1.0f;
-            
-            Perso.GetComponent<MouseLook>().enabled = true;
-            Perso.GetComponent<CharacterMotor>().enabled = true;
-            Perso.GetComponent<FPSInputController>().enabled = true;
+
+            Perso.GetComponent<RigidbodyFirstPersonController>().enabled = true;
 
             Camera.GetComponent<MouseLook>().enabled = true;
             Camera.GetComponent<AudioListener>().enabled = true;

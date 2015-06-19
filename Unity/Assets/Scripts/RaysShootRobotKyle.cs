@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RaysShootRobotKyle : MonoBehaviour
 {
+
     public int BulletsPerClip;
     public int BulletsLeft;
     public float Damage;
@@ -30,7 +31,7 @@ public class RaysShootRobotKyle : MonoBehaviour
 
     public GameObject currentWeapon;
 
-    // Use this for initialization
+    
     void Start()
     {
         currentWeapon = GameObject.Find("SciFiGun");
@@ -38,7 +39,6 @@ public class RaysShootRobotKyle : MonoBehaviour
         hitParticles.emit = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -75,25 +75,6 @@ public class RaysShootRobotKyle : MonoBehaviour
         {
             ShootTimer = 0;
         }
-
-        if (KeyTimer == 0)
-        {
-                if (ShootTimer == 0)
-                {
-                    //currentWeapon.GetComponent<Animation>().Play("Idle");
-                    //PlayShootAudio();
-                    RayShot();
-                    ShootTimer = ShootCooler;
-                    KeyTimer = KeyCooler;
-                    //MuzzleFlashShow();
-                    muzzleFlashTimer = muzzleFlashCooler;
-                }
-        }
-
-        if (Input.GetKeyDown(KeyCode.R) && !Input.GetKey(KeyCode.Mouse0))
-        {
-            Reload();
-        }
     }
 
     void MuzzleFlashShow()
@@ -111,49 +92,54 @@ public class RaysShootRobotKyle : MonoBehaviour
         Light3.SetActive(true);
     }
 
-    void RayShot()
+    public void RayShot()
     {
-        RaycastHit hit;
-        /*if (Input.GetKey(KeyCode.Mouse1))
+        if (ShootTimer <= 0)
         {
-            currentWeapon.GetComponent<Animation>().Play("Recul2");
-        }
-        else
-        {
-            currentWeapon.GetComponent<Animation>().Play("Recul1");
-        }*/
-
-        Vector3 DirectionRay = transform.TransformDirection(Vector3.forward);
-        Debug.DrawRay(transform.position, DirectionRay * Range, Color.yellow);
-
-        if (Physics.Raycast(transform.position, DirectionRay, out hit, Range))
-        {
-            if (hit.rigidbody)
+            RaycastHit hit;
+            /*if (Input.GetKey(KeyCode.Mouse1))
             {
-                if (hitParticles)
+                currentWeapon.GetComponent<Animation>().Play("Recul2");
+            }
+            else
+            {
+                currentWeapon.GetComponent<Animation>().Play("Recul1");
+            }*/
+
+            Vector3 DirectionRay = transform.TransformDirection(Vector3.forward);
+            Debug.DrawRay(transform.position, DirectionRay*Range, Color.yellow);
+
+            if (Physics.Raycast(transform.position, DirectionRay, out hit, Range))
+            {
+                if (hit.collider.gameObject.tag == "Player")
                 {
+
+
                     hitParticles.transform.position = hit.point;
                     hitParticles.transform.localRotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
 
                     hitParticles.Emit();
 
 
-                    hit.rigidbody.AddForceAtPosition(DirectionRay * Force, hit.point);
-                    hit.collider.SendMessageUpwards("ApplyDamage", Damage, SendMessageOptions.DontRequireReceiver);
+                    hit.rigidbody.AddForceAtPosition(DirectionRay*Force, hit.point);
+                    hit.collider.gameObject.GetComponent<Health>().ApplyDamage((int) Damage);
+
+                    ShootTimer = ShootCooler;
+                    KeyTimer = KeyCooler;
                 }
             }
-        }
 
-        BulletsLeft--;
+            BulletsLeft--;
 
-        if (BulletsLeft < 0)
-        {
-            BulletsLeft = 0;
-        }
+            if (BulletsLeft < 0)
+            {
+                BulletsLeft = 0;
+            }
 
-        if (BulletsLeft == 0)
-        {
-            Reload();
+            if (BulletsLeft == 0)
+            {
+                Reload();
+            }
         }
     }
 
