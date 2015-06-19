@@ -61,7 +61,6 @@
      <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CharacterMove.cs" />
-     <Compile Include="Assets\Scripts\Dontdestroy.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\GunMovement.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />

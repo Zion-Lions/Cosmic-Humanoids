@@ -56,7 +56,7 @@
      <None Include="Assets\Standard Assets\New\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>D:/Stockage fichiers/Documents/GitHub/Cosmic-Humanoids2/Unity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Thibaut/Documents/GitHub/Cosmic-Humanoids2/Unity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

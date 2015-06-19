@@ -10,89 +10,50 @@ public class SoundControl : MonoBehaviour {
 	public AudioClip song3;
 	public AudioClip song4;
 	public AudioClip song5;
-	bool pause;
-	int n;
-	Time t;
+	public AudioClip interlude;
 
-	// Use this for initialization
-	void Start () {
-		pause = true;
-		GetComponent<AudioSource> ().Stop ();
-		AudioListener.pause = true;
-		Play ();
-		if (GetComponent<AudioSource> ().mute) {
-			GetComponent<AudioSource> ().PlayOneShot (song1);
-			GetComponent<AudioSource>().mute = false;
-			Pause();
+
+	void Start()
+	{
+				if (Application.loadedLevelName == "MainMenu") {
+			GetComponent<AudioSource>().PlayOneShot(interlude);
+				} else if (Application.loadedLevelName == "FirstGame") {
+						GetComponent<AudioSource> ().PlayOneShot (song2);
+				} else if (Application.loadedLevelName == "Game") {
+						GetComponent<AudioSource> ().PlayOneShot (song3);
+				} else if (Application.loadedLevelName == "MazeGenerator") {
+						GetComponent<AudioSource> ().PlayOneShot (song5);
 				}
-		n = 1;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	public void Play()
-	{
-		AudioListener.pause = false;
-		if(GetComponent<AudioSource>().mute)
-			GetComponent<AudioSource> ().Play();
+				else if (Application.loadedLevelName == "Multijoueur") {
+						GetComponent<AudioSource>().PlayOneShot(song1);
+				}
+				else if (Application.loadedLevelName == "TheEnd") {
+						GetComponent<AudioSource>().PlayOneShot(song4);
+				}
 	}
 
-	public void Pause()
+	void Update()
 	{
-		if (pause) {
-			AudioListener.pause = true;;
-				}else
-			AudioListener.pause = false;
-		pause = !pause;
+
 	}
 
 	public void Next()
 	{
-		GetComponent<AudioSource> ().Stop ();
-		AudioListener.pause = true;
-		pause = true;
-		n++;
-		AudioListener.pause = false;
-		GetComponent<AudioSource> ().PlayOneShot (songtoplay (n));
+		}
+
+
+	public void Play()
+	{
+
+		}
+
+	public void Pause()
+	{
+
 	}
 
 	public void Stop()
 	{
-		AudioListener.pause = true;
-		pause = true;
-		GetComponent<AudioSource> ().Stop ();
-	}
 
-	AudioClip songtoplay(int i)
-	{
-		switch (i)
-		{
-		case(1):
-			return song1;
-		case(2):
-			return song2;
-		case(3):
-			return song3;
-		case(4):
-			return song4;
-		case(5):
-			return song5;
-		default:
-			n = 1;
-			return song1;
-		}
-	}
-
-	public void Volplus()
-	{
-		GetComponent<AudioSource> ().volume++;
-	}
-
-	public void Volmoins()
-	{
-		GetComponent<AudioSource> ().volume--;
 	}
 }
