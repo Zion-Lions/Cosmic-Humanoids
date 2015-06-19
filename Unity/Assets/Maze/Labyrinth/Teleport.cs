@@ -18,17 +18,22 @@ public class Teleport : MonoBehaviour
     {
         if (collider.gameObject.name == "Perso complet" && disableTimer <= 0)
         {
-                foreach (Teleport tp in FindObjectsOfType<Teleport>())
+            foreach (Teleport tp in FindObjectsOfType<Teleport>())
+            {
+                if (tp.code == (code + 1) && code % 2 == 0)
                 {
-                    if (tp.code == (code + 1))
-                    {
-                        tp.disableTimer = 2;
-                        Vector3 position = tp.gameObject.transform.position;
-                        position.y += 2;
-                        collider.gameObject.transform.position = position;
-                    }
+                    tp.disableTimer = 2;
+                    Vector3 position = tp.gameObject.transform.position;
+                    position.y += 2;
+                    collider.gameObject.transform.position = position;
                 }
-            
+
+                if (code == 8)
+                {
+                    Application.LoadLevel("TheEnd");
+                }
+            }
+
         }
     }
 }

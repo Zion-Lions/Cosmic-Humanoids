@@ -1,15 +1,21 @@
-Base path: C:/Program Files/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-10564
+Base path: C:/Users/Mermaid/Documents/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-7824
 Cmd: getPlatforms
 Cmd: compileSnippet
-  api=4 type=0 insize=63517 outsize=4012 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+  api=4 type=0 insize=63517 outsize=5466 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
 Cmd: compileSnippet
-  api=4 type=1 insize=63517 outsize=2826 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF ok=1
+  api=4 type=0 insize=39955 outsize=3256 kw=POINT ok=1
 Cmd: compileSnippet
-  api=4 type=0 insize=39955 outsize=3256 kw=DIRECTIONAL ok=1
+  api=4 type=1 insize=39955 outsize=3078 kw=POINT ok=1
 Cmd: compileSnippet
-  api=4 type=1 insize=39955 outsize=2298 kw=DIRECTIONAL ok=1
-Cmd: preprocess
-  insize=3198 outsize=1837 ok=1
-Cmd: preprocess
-  insize=1812 outsize=1056 ok=1
+  api=4 type=0 insize=7509 outsize=8968 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=5077 outsize=6636 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=5077 outsize=3996 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=7502 outsize=7953 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF VERTEXLIGHT_ON ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4314 outsize=5588 kw=POINT ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4314 outsize=2192 kw=POINT ok=1

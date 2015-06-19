@@ -15,7 +15,7 @@ public class MainMenuButton : MonoBehaviour
 
 	public void StartGame()
 	{
-        Application.LoadLevel("FirstGame");
+        Application.LoadLevel("IntroCine");
 	}
 
     public void Multiplayer()
