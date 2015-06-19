@@ -12,7 +12,7 @@ public class NavMeshAI : MonoBehaviour
 
 	void Start ()
     {
-		targetToLookAt = GameObject.Find ("MAX").transform;
+		targetToLookAt = GameObject.Find("MAX").transform;
 		currentHealth = GetComponent<Health>().health;
 	}
 	

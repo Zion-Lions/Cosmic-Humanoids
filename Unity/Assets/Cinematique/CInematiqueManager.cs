@@ -1,11 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CInematiqueManager : MonoBehaviour {
+public class CInematiqueManager : MonoBehaviour
+{
+
+    public MovieTexture test;
+
+    void Start()
+    {
+        test = (MovieTexture) GetComponent<Renderer>().material.mainTexture;
+    }
 
     void Update()
     {
-        ((MovieTexture)GetComponent<Renderer>().material.mainTexture).Play();
+        test.Play();
 
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown("p"))
         {

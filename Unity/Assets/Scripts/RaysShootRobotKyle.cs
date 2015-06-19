@@ -111,7 +111,7 @@ public class RaysShootRobotKyle : MonoBehaviour
 
             if (Physics.Raycast(transform.position, DirectionRay, out hit, Range))
             {
-                if (hit.collider.gameObject.tag == "Player")
+                if (hit.rigidbody)
                 {
 
 

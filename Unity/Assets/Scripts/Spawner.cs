@@ -14,20 +14,21 @@ public class Spawner : MonoBehaviour {
 	void Start () {
 		minWait = 1;
 		maxWait = 10;
-		waitTime = Random.Range (minWait, maxWait);
+		waitTime = Random.Range(minWait, maxWait);
 		zombiesSpawned = 0;
 		spawn = true;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		if (spawn)
-						Spawn ();
+			Spawn();
 	}
 
 	void Spawn()
 	{
-		Instantiate (zombiePrefab, transform.position, transform.rotation); // spawn at spawner location
+		Instantiate(zombiePrefab, transform.position, transform.rotation); // spawn at spawner location
 		zombiesSpawned ++;
 		NewWaitTime ();
 		spawn = false;
@@ -42,6 +43,6 @@ public class Spawner : MonoBehaviour {
 
 	void NewWaitTime()
 	{
-		waitTime = Random.Range (minWait, maxWait);
+		waitTime = Random.Range(minWait, maxWait);
 	}
 }

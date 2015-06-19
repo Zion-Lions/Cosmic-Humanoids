@@ -72,13 +72,13 @@
      <Compile Include="Assets\Scripts\MovetoMap.cs" />
      <Compile Include="Assets\Scripts\Multijoueur.cs" />
      <Compile Include="Assets\Scripts\NavMeshAI.cs" />
-     <Compile Include="Assets\Scripts\NetWorkInitialiZe.cs" />
      <Compile Include="Assets\Scripts\PausedMenu.cs" />
      <Compile Include="Assets\Scripts\RayShoot.cs" />
      <Compile Include="Assets\Scripts\RaysShootRobotKyle.cs" />
      <Compile Include="Assets\Scripts\Robot.cs" />
      <Compile Include="Assets\Scripts\SoundControl.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\SpawnerSurvival.cs" />
      <Compile Include="Assets\Scripts\SwitchWeapon.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <None Include="Assets\Destroyed_city_FREE\Destroyed_city_FREE_Info.txt" />
