@@ -20,17 +20,17 @@ public class Resolution : MonoBehaviour {
 
     public void screen169()
     {
-        Screen.SetResolution(1600, 900, false);
+        Screen.SetResolution(1600, 900, true);
     }
 
     public void screen43()
     {
-        Screen.SetResolution(1024, 768, false);
+        Screen.SetResolution(1024, 768, true);
     }
 
     public void screen54()
     {
-        Screen.SetResolution(1366, 768, false);
+        Screen.SetResolution(1366, 768, true);
     }
 
 }

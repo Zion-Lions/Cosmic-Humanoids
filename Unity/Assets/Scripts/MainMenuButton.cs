@@ -18,6 +18,11 @@ public class MainMenuButton : MonoBehaviour
         Application.LoadLevel("IntroCine");
 	}
 
+    public void Survival()
+    {
+        Application.LoadLevel("FirstGame");
+    }
+
     public void Multiplayer()
     {
         Application.LoadLevel("Multijoueur");
