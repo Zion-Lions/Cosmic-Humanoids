@@ -6,14 +6,12 @@ public class NavMeshAI : MonoBehaviour
 
 	Transform targetToLookAt;
 	Vector3 v;
-	int currentHealth;
 
 
 
 	void Start ()
     {
 		targetToLookAt = GameObject.Find("MAX").transform;
-		currentHealth = GetComponent<Health>().health;
 	}
 	
 
@@ -39,7 +37,5 @@ public class NavMeshAI : MonoBehaviour
 			GetComponent<Animation>().Play("Robot_animation");
 			GetComponent<NavMeshAgent>().speed = 2f;
 		}
-
-		currentHealth = GetComponent<Health>().health;
 	}
 }

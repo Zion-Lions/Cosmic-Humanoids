@@ -17,7 +17,7 @@ public class CInematiqueManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown("p"))
         {
-            Application.LoadLevel("FirstGame");
+            Application.LoadLevel("Game");
         }
     }
 }
