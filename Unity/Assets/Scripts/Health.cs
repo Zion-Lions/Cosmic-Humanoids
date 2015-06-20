@@ -6,11 +6,10 @@ public class Health : MonoBehaviour
 
 	public int health;
 
-
 	void Start ()
     {
 		if (gameObject.name == "Robot Kyle")
-				health = Random.Range(10, 150);
+				health = Random.Range(30, 50);
 		else
 				health = 100;
 	}

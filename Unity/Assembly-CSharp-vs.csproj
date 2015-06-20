@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\HUDSurvival.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\HealthHUD.cs" />
+     <Compile Include="Assets\Scripts\HealthHUD1.cs" />
      <Compile Include="Assets\Scripts\HideCursor.cs" />
      <Compile Include="Assets\Scripts\MainMenuButton.cs" />
      <Compile Include="Assets\Scripts\Multijoueur.cs" />
