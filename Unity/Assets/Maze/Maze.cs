@@ -16,7 +16,7 @@ public class Maze : MonoBehaviour
     }
 
     public GameObject wall;
-    public float wallLength = 2.0f;
+    private float wallLength = 4.0f;
     public int xSize = 30;
     public int ySize = 30;
 

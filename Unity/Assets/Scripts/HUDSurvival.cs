@@ -8,7 +8,7 @@ public class HUDSurvival : MonoBehaviour {
     private GameObject Spawners;
     public GameObject BulletsLeft;
     public GameObject AllBulletsLeft;
-    public GameObject ZombiesLeft;
+    public GameObject HumanoidsLeft;
     public GameObject Round;
     private Text text1;
     private Text text2;
@@ -21,7 +21,7 @@ public class HUDSurvival : MonoBehaviour {
         Spawners = GameObject.Find("Spawners");
         text1 = BulletsLeft.GetComponent<Text>();
         text2 = AllBulletsLeft.GetComponent<Text>();
-        text3 = ZombiesLeft.GetComponent<Text>();
+        text3 = HumanoidsLeft.GetComponent<Text>();
         text4 = Round.GetComponent<Text>();
         text1.fontSize = 50;
         text1.fontStyle = FontStyle.Bold;
@@ -33,7 +33,7 @@ public class HUDSurvival : MonoBehaviour {
     {
         text1.text = MainCamera.GetComponent<RayShoot>().BulletsLeft.ToString();
         text2.text = MainCamera.GetComponent<RayShoot>().AllBulletsLeft.ToString();
-        text3.text = "Zombies Left: " + Spawners.GetComponent<SpawnerSurvival>().zombiesSpawned.ToString();
+        text3.text = "Humanoïds Left: " + Spawners.GetComponent<SpawnerSurvival>().zombiesSpawned.ToString();
         text4.text = "Round: " + Spawners.GetComponent<SpawnerSurvival>().round.ToString();
     }
 }
