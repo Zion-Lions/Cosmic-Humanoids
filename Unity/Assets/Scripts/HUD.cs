@@ -4,7 +4,7 @@ using System.Collections;
 
 public class HUD : MonoBehaviour
 {
-    private GameObject MainCamera;
+    public GameObject MainCamera;
     public GameObject BulletsLeft;
     public GameObject AllBulletsLeft;
     private Text text1;
@@ -12,7 +12,6 @@ public class HUD : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        MainCamera = GameObject.Find("Main Camera");
         text1 = BulletsLeft.GetComponent<Text>();
         text2 = AllBulletsLeft.GetComponent<Text>();
         text1.fontSize = 50;
