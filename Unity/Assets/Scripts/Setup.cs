@@ -7,8 +7,8 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class Setup : NetworkBehaviour
 {
 
-    public float PositionLerpStep = 15f;
-    public float RotationLerpStep = 15f;
+    public float PositionLerpStep = 5f;
+    public float RotationLerpStep = 12f;
     public GameObject camera;
     [SyncVar]
     private Vector3 syncPosition;
@@ -23,9 +23,23 @@ public class Setup : NetworkBehaviour
 
         if (isLocalPlayer)
         {
-            Debug.Log("OKOK");
+            this.GetComponent<RigidbodyFirstPersonController>().enabled = true;
+            this.GetComponent<AmmoBoxScript>().enabled = true;
+            this.GetComponent<Health>().enabled = true;
+
+            camera.GetComponent<Camera>().enabled = true;
+            camera.GetComponent<GUILayer>().enabled = true;
+            camera.GetComponent<FlareLayer>().enabled = true;
+            camera.GetComponent<MouseLook>().enabled = true;
+            camera.GetComponent<AudioListener>().enabled = true;
+            camera.GetComponent<AudioSource>().enabled = true;
+            camera.GetComponent<RayShoot>().enabled = true;
+            camera.GetComponent<SwitchWeapon>().enabled = true;
+            camera.GetComponent<HideCursor>().enabled = true;
+            camera.GetComponent<AimMultiplayer>().enabled = true;
+            camera.GetComponent<PausedMenuMultiplayer>().enabled = true;
+
             camera.SetActive(true);
-            Debug.Log("OKGROS");
         }
 	}
 
@@ -36,7 +50,7 @@ public class Setup : NetworkBehaviour
         {
             CmdSendData(this.rigidbody.position, this.rigidbody.rotation);
         }
-        if (!isServer && !isLocalPlayer)
+        if (!isLocalPlayer)
         {
             Interpolate();
         }
