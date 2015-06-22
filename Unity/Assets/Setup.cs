@@ -14,9 +14,9 @@ public class Setup : NetworkBehaviour {
         {
           
            
-            GameObject.Find("HUDCanvas").SetActive(false);
-            script = GetComponent<RigidbodyFirstPersonController>();
-            script.enabled = false;
+            //GameObject.Find("HUDCanvas").SetActive(false);
+             GetComponent<RigidbodyFirstPersonController>().enabled = false;
+            
 
             
             Debug.Log("OK");
