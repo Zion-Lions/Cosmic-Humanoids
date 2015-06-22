@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HideCursor : MonoBehaviour {
+public class HideCursor : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		Cursor.visible = false;
 	}
 

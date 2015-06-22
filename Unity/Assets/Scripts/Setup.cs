@@ -4,7 +4,8 @@ using System.Collections;
 using UnityEngine.Networking;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class Setup : NetworkBehaviour {
+public class Setup : NetworkBehaviour
+{
 
     public float PositionLerpStep = 15f;
     public float RotationLerpStep = 15f;
@@ -19,7 +20,8 @@ public class Setup : NetworkBehaviour {
 	void Start()
     {
         rigidbody = this.GetComponent<Rigidbody>();
-        if(isLocalPlayer)
+
+        if (isLocalPlayer)
         {
             camera.SetActive(true);
         }
@@ -28,11 +30,11 @@ public class Setup : NetworkBehaviour {
     
     void FixedUpdate()
     {
-        if(isLocalPlayer)
+        if (isLocalPlayer)
         {
             CmdSendData(this.rigidbody.position, this.rigidbody.rotation);
         }
-        if(!isServer && !isLocalPlayer)
+        if (!isServer && !isLocalPlayer)
         {
             Interpolate();
         }
