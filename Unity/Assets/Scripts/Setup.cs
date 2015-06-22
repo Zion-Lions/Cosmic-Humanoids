@@ -24,6 +24,7 @@ public class Setup : NetworkBehaviour
         if (isLocalPlayer)
         {
             camera.SetActive(true);
+            Debug.Log("OKGROS");
         }
 	}
 

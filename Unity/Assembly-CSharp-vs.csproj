@@ -75,8 +75,8 @@
      <Compile Include="Assets\Scripts\Multijoueur.cs" />
      <Compile Include="Assets\Scripts\NavMeshAI.cs" />
      <Compile Include="Assets\Scripts\NavMeshAISurvival.cs" />
-     <Compile Include="Assets\Scripts\NetWorkInitialiZe.cs" />
      <Compile Include="Assets\Scripts\PausedMenu.cs" />
+     <Compile Include="Assets\Scripts\PausedMenuMultiplayer.cs" />
      <Compile Include="Assets\Scripts\RayShoot.cs" />
      <Compile Include="Assets\Scripts\RaysShootRobotKyle.cs" />
      <Compile Include="Assets\Scripts\Robot.cs" />
