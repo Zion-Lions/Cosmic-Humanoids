@@ -23,6 +23,7 @@ public class Setup : NetworkBehaviour
 
         if (isLocalPlayer)
         {
+            Debug.Log("OKOK");
             camera.SetActive(true);
             Debug.Log("OKGROS");
         }

@@ -7,7 +7,6 @@ public class AimMultiplayer : MonoBehaviour
     public bool aim = false;
     public GameObject cam;
     public GameObject viseur;
-    public GameObject scopeCam;
 
     // Use this for initialization
     void Start()
@@ -24,7 +23,7 @@ public class AimMultiplayer : MonoBehaviour
             if (aim)
             {
                 cam.SetActive(true);
-                scopeCam.GetComponent<Animation>().Play("Scope");
+                cam.GetComponent<Animation>().Play("Scope");
                 viseur.SetActive(false);
             }
         }
@@ -40,7 +39,7 @@ public class AimMultiplayer : MonoBehaviour
 
     IEnumerator Unscope()
     {
-        scopeCam.GetComponent<Animation>().Play("Unscope");
+        cam.GetComponent<Animation>().Play("Unscope");
         yield return new WaitForSeconds(0.250f);
         cam.SetActive(false);
         viseur.SetActive(true);
