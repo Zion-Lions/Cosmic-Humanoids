@@ -28,7 +28,7 @@ public class NavMeshAISurvival : MonoBehaviour {
         {
             GetComponent<NavMeshAgent>().destination = targetToLookAt.position;
             GetComponent<Animation>().Play("Robot_animation");
-            GetComponent<NavMeshAgent>().speed = 2f;
+            GetComponent<NavMeshAgent>().speed = 4f;
         }
     }
 }

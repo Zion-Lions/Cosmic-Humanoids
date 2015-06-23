@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Robot.cs" />
      <Compile Include="Assets\Scripts\Setup.cs" />
      <Compile Include="Assets\Scripts\SoundControl.cs" />
+     <Compile Include="Assets\Scripts\SpawnEnnemi.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\SpawnerSurvival.cs" />
      <Compile Include="Assets\Scripts\SwitchWeapon.cs" />
@@ -95,7 +96,7 @@
      <None Include="Assets\Standard Assets\New\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Destroyed_city_FREE\Shaders\AlphaTest-DiffuseDoubleSide.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Thomas/Documents/Git/Cosmic-Humanoids2/Unity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Thibaut/Documents/GitHub/Cosmic-Humanoids2/Unity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

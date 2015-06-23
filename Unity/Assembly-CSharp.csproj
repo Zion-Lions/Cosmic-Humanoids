@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\Robot.cs" />
      <Compile Include="Assets\Scripts\Setup.cs" />
      <Compile Include="Assets\Scripts\SoundControl.cs" />
+     <Compile Include="Assets\Scripts\SpawnEnnemi.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\SpawnerSurvival.cs" />
      <Compile Include="Assets\Scripts\SwitchWeapon.cs" />
