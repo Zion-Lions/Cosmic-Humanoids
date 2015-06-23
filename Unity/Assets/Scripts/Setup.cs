@@ -49,6 +49,7 @@ public class Setup : NetworkBehaviour
         if (isLocalPlayer)
         {
             CmdSendData(this.rigidbody.position, this.rigidbody.rotation);
+            
         }
         if (!isLocalPlayer)
         {
